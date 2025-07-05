@@ -5,7 +5,7 @@ Utility for quickly navigating around your filesystem
 ## Setup
 
 Clone and build the binary using:
-```
+```bash
 cargo build --release
 ```
 
@@ -19,13 +19,13 @@ It also provides autocomplete for the directory tags.
 #### Add Directory Tag
 
 Use the 'add' argument `-a`, `--add` to add the current directory with the given tag
-```
+```bash
 # cdt --add <tag-name>
 cdt -a cur-dir-tag
 ```
 
 Optionally, you can use the 'path' argument `-p`, `--path` to specify the directory to map the tag to
-```
+```bash
 # cdt --add <tag-name> --path <absolute-directory-path>
 cdt -a dev -p ~/dev/
 ```
@@ -34,7 +34,7 @@ cdt -a dev -p ~/dev/
 
 Supplying a tag name directly to the command will cd you to the associated directory
 (Note: make sure you set up the `cdt_wrapper.sh` script properly for this to work)
-```
+```bash
 # cdt <tag-name>
 cdt dev
 ```
@@ -43,7 +43,7 @@ cdt dev
 #### Viewing Created Tags
 
 If curious about your tags, use the 'list' argument `-l`, `--list` to view the mappings you've created
-```
+```bash
 cdt -l
 ```
 Note that there's also a variant of this argument `--list-tags` which lists only the tag names.
